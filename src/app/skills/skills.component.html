@@ -1,0 +1,46 @@
+<div class="skills mb-5 pb-3" id="skills">
+    <p class="l-title text-center">My <span class="l-title-sec">Skills</span></p>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-11">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6">
+            <p>Coding Skills</p>
+            <div class="card l-excard">
+              <div class="card-body">
+                <div class="l-progress_bar block">
+                  <div *ngFor="let skill of codingSkills" class="progress_bar_item mt-2">
+                    <div class="d-flex">
+                      <div class="item_label cell auto">{{skill.name}}</div>
+                      <div class="item_value cell shrink ml-auto">{{skill.progress}}%</div>
+                    </div>
+                    <div class="item_bar cell">
+                      <div class="progress" [style.width.%]="skill.progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <p>Professional Skills</p>
+            <div class="card l-excard">
+              <div class="card-body">
+                <div class="l-progress_bar block">
+                  <div *ngFor="let skill of professionalSkills" class="progress_bar_item mt-2">
+                    <div class="d-flex">
+                      <div class="item_label cell auto">{{skill.name}}</div>
+                      <div class="item_value cell shrink ml-auto">{{skill.progress}}%</div>
+                    </div>
+                    <div class="item_bar cell">
+                      <div class="progress" [style.width.%]="skill.progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
