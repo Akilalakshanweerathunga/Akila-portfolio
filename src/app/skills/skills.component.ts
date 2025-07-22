@@ -18,7 +18,9 @@ export class SkillsComponent implements OnInit {
     { name: 'CSS', progress: 0, target: 85 },
     { name: 'Javascript', progress: 0, target: 70 },
     { name: 'Android', progress: 0, target: 70 },
-    { name: 'C#', progress: 0, target: 50 }
+    { name: 'C#', progress: 0, target: 50 },
+    { name: 'Python', progress: 0, target: 50 },
+    { name: 'Liquid', progress: 0, target: 40 }
   ];
 
   professionalSkills: Skill[] = [
@@ -28,6 +30,7 @@ export class SkillsComponent implements OnInit {
     { name: 'Bootstrap', progress: 0, target: 85 },
     { name: 'PHP Frameworks (Laminas, Zend, Laravel)', progress: 0, target: 80 },
     { name: 'React, Angular', progress: 0, target: 80 },
+    { name: 'Wordpress, Shopify', progress: 0, target: 80 },
     { name: 'C#, JavaFX UI', progress: 0, target: 50 }
   ];
 
